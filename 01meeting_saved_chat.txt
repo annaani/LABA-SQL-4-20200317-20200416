@@ -1,0 +1,91 @@
+17:00:48	 From Daniyar Seitembetov to All panelists : Добрый день!
+17:00:52	 From Artem Avramchuk : +
+17:00:58	 From arthurgudov : +
+17:01:01	 From Ольга to All panelists : +
+17:01:12	 From Ольга : +
+17:01:15	 From Yevhen Tymoshenko : +
+17:01:19	 From Daniyar Seitembetov : должно быть правильно теперь
+17:01:19	 From Vladik to All panelists : +
+17:01:22	 From Ekaterina : +
+17:01:23	 From Dmitry : +
+17:01:33	 From strelchenya to All panelists : +
+17:01:38	 From Andrii_Pelypenko to All panelists : +
+17:01:39	 From Александр : Привет!
+17:01:42	 From Iurii Panochyshyn : +
+17:01:59	 From Yevhen Tymoshenko : да
+17:01:59	 From Daniyar Seitembetov : Да
+17:02:01	 From Iurii Panochyshyn : +
+17:02:03	 From Dmitry : +
+17:02:03	 From Ольга : +
+17:02:09	 From Dmitry : +
+17:02:09	 From Yevhen Tymoshenko : +
+17:06:23	 From Ольга : Нет опыта
+17:06:28	 From Александр : нет опыта
+17:06:29	 From Anna Ani : года 3
+17:06:35	 From Daniyar Seitembetov : нет опыта
+17:06:39	 From пк to All panelists : опыта нет
+17:06:41	 From Svetlana Arkhipova to All panelists : нет опыта
+17:06:45	 From Dmitry : поверхностный опыт с MySQL
+17:06:46	 From LENOVO to All panelists : очень начальное
+17:06:47	 From arthurgudov : Нет опыта
+17:06:54	 From Yevhen Tymoshenko : Как БА и в рамках базовой Джава-разработки
+17:07:04	 From Yevhen Tymoshenko : :)
+17:07:12	 From arthurgudov : В программировании
+17:07:13	 From пк to All panelists : и в программировании тоже
+17:07:21	 From Vladik : Нет опыта
+17:07:26	 From Iurii Panochyshyn : делал БД в MS Access, немного работаю с BI
+17:07:31	 From Александр : нет опыта в программировании
+17:07:32	 From Anna Ani : без процедур опыт есть)
+17:07:32	 From Ekaterina : простые селекты в MS SQL
+17:07:41	 From Ольга : Нет опыта работы с базами, нет в программировании. 
+17:08:14	 From Daniyar Seitembetov : прям 101 необходим курс :)
+17:08:21	 From strelchenya to All panelists : нет опыта
+17:08:23	 From Andrii_Pelypenko to All panelists : В программировании небольшой есть, с базами тоже не большой.
+17:08:29	 From LENOVO : адназначна! ))
+17:08:39	 From Anna Ani : в программе вроде бы были процедуры?
+17:08:41	 From Anna : простые запросы в SQL
+17:10:28	 From Максим Белозеров : Идем по программе, не адаптируясь под 101 ;)
+17:12:06	 From Anna Ani : а бэкапы научите делать?)
+17:21:33	 From Anna Ani : ок, спасибо
+17:33:25	 From Daniyar Seitembetov : Будем ли мы изучать подвязку баз данных к инструментам BI?
+17:33:42	 From Daniyar Seitembetov : для примера 1С к Power BI
+17:33:55	 From Daniyar Seitembetov : подскажете материал для изучения?
+17:34:23	 From Александр : интересно
+17:41:36	 From Ekaterina : 375 Беларусь
+17:55:01	 From Yevhen Tymoshenko : ERD :)
+17:55:49	 From Ekaterina : как сделать такую структуры автоматически? Важно когда начинаешь работать с незнакомой БД.
+17:56:58	 From Anna Ani : схема данных
+18:01:42	 From Svetlana Arkhipova : The Unified Modeling Language User Guide сможет помочь с пониманием таких диаграм?
+18:02:25	 From Anna Ani : там вроде в rational rose работают
+18:02:34	 From Anna Ani : не сюда это)
+18:04:37	 From Yevhen Tymoshenko : в инструкции Azure. если я его заюзал - єто плохо?
+18:05:00	 From Anna Ani : вы всегда на дбивере будете показывать?
+18:05:16	 From Anna Ani : надо значит и его поставить
+18:05:24	 From Ольга : в SSMS все аналогично?
+18:08:15	 From Самородов Виталий to All panelists : * #     Р—Р°РЅСЏС‚РёРµ 1                                      #
+ * #     РћСЃРЅРѕРІС‹ СЂР°Р±РѕС‚С‹ СЃ СЂРµР»СЏС†РёРѕРЅРЅС‹РјРё Р±Р°Р·Р°РјРё РґР°РЅРЅС‹С
+18:08:35	 From Самородов Виталий to All panelists : это показывается при открытии фаила. Почему?
+18:12:33	 From Самородов Виталий to All panelists : фаил этот 01class
+18:15:29	 From Самородов Виталий : ок
+18:26:24	 From Anna Ani : чем отличается nvarchar и varchar?
+18:26:56	 From Anna Ani : извините, пропустила, спасибо
+18:31:52	 From Daniyar Seitembetov : Будете ли подсказывать в каком формате вы ожидаете ответы на домашнее задание? Скриншот в 1 задании будет достаточным ответом?
+18:33:54	 From Yevhen Tymoshenko : кстати, хост в инструкции в некопируемом виде.. пришлось руками вводить :(
+18:35:27	 From Ольга : Пожалуйста, покажите еще раз, как открыть окно, где писать домашнее задание
+18:37:09	 From LENOVO to All panelists : да, с хостом было неудобненько… но не смертельно
+18:40:21	 From Anna Ani : ответ на домашку в ворд документе?
+18:40:27	 From Anna Ani : или где
+18:40:40	 From Dmitry : как потом сохранять ответ на вопросы?
+18:40:45	 From Yevhen Tymoshenko : ответы коммитить на гит? или там есть механизм отправки в кабинете?
+18:41:26	 From Yevhen Tymoshenko : ясно :)
+18:41:46	 From Anna Ani : аа, в комментах можно? Ок
+18:42:03	 From Anna Ani : нет, все понятно)
+18:42:18	 From Anna Ani : спасибо
+18:43:30	 From Ольга : Для жирафа: Составляем ответ в клиенте, потом копируем в комментах в кабинете лабы и отправляем, верно?
+18:43:58	 From Ольга : ураа! Спасибо)
+18:46:55	 From Anna Ani : Спасибо за лекцию
+18:46:58	 From Daniyar Seitembetov : Спасибо!
+18:46:58	 From andriy.gamar : спасибо
+18:47:01	 From Yevhen Tymoshenko : спс
+18:47:05	 From Ekaterina : спасибо!
+18:47:08	 From Svetlana Arkhipova : спасибо

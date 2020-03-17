@@ -13,6 +13,7 @@
   */
 
  SELECT * FROM countries;
+--test
 
 /*
  * +-------------+

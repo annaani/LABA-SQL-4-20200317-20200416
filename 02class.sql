@@ -15,6 +15,8 @@
 -- вывести все данные по продуктам
 -- 1/17
 select * from db_laba.dbo.products;
+--select * from db_laba.dbo.products;
+
 -- 2/17
 -- вывести все данные по заказам
 select * from db_laba.dbo.orders;
@@ -23,6 +25,7 @@ select * from db_laba.dbo.orders;
 -- вывести все данные по странам
 -- 3/17
 select * from db_laba.dbo.countries;
+--select * from countries; -- не рекомендую так писать запосы
 
 -- вывести все данные по регионам
 -- 4/17
@@ -39,8 +42,8 @@ select product_id,
 	   product_name,
 	   description,
 	   standard_cost,
-	   list_price,
-	   category_id
+	   list_price--,
+	   --category_id
   from db_laba.dbo.products;
 
 -- вывести не все данные по продуктам перечисляя поля (колонки) - 2й способ используя алиас (псевдоним)
@@ -48,9 +51,11 @@ select product_id,
 select p.product_id
 	   ,p.product_name
 	   ,p.description
-	   ,p.standard_cost
+	   --,p.standard_cost
 	   ,p.list_price
-	   --,p.category_id
+	   ,p.category_id
+	   ,p.product_name
+	   ,p.description
   from db_laba.dbo.products p;
 
 /*
@@ -61,9 +66,9 @@ select p.product_id
  -- вывести уникальный список категорий для таблицы продуктов
  -- отсортировать по возрастанию
  -- 8/17
-select distinct (p.category_id)
-  from db_laba.dbo.products p
-  order by 1;
+select distinct (p00.category_id) --distinct p00.category_id -- не рекомендую так писать запосы
+  from db_laba.dbo.products p00
+  order by 1;-- desc ; asc
 
 /*
  * +-----------------------+
@@ -78,8 +83,8 @@ select p.product_name
 	   ,p.description
 	   ,p.standard_cost
   from db_laba.dbo.products p
- where p.standard_cost >= 3000
- order by p.product_name desc;
+ where p.standard_cost >= 3000 --  не менее 3000
+ order by p.product_name;-- desc;
 
 /*
  * +------------------+
@@ -108,9 +113,9 @@ select p.product_name
 -- 11/17
 select p.product_name
 	   ,p.description
-	   ,p.standard_cost
 	   --,p.list_price
 	   ,p.category_id
+	   ,p.standard_cost
   from db_laba.dbo.products p
  where p.category_id = 1
  or p.standard_cost > 5000
@@ -162,7 +167,7 @@ select p.product_name
 	   --,p.list_price
 	   --,p.category_id
   from db_laba.dbo.products p
- where p.product_name like 'k%'
+ where p.product_name like 'K%'
  order by p.product_name desc;
 
  -- вывести имя продукта, описание и стандартную стоимось по продуктам
@@ -175,7 +180,8 @@ select p.product_name
  	   --,p.list_price
  	   --,p.category_id
    from db_laba.dbo.products p
-  where p.product_name like '__n%'
+  where p.product_name like --'%_n%'
+'__n%'
   order by p.product_name desc;
 
 
@@ -194,8 +200,8 @@ select p.product_name
 		,state
 		,country_id
   FROM db_laba.dbo.locations
-  where postal_code = NULL;
-  --where postal_code is NULL;
+ -- where postal_code = NULL;
+  where postal_code is NULL;
 
 /*
  * +-----------------------------------------------+

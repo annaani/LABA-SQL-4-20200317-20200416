@@ -1,0 +1,38 @@
+17:00:59	 From Vadim Katkov : +1
+17:01:12	 From Лиодт Оля : +
+17:01:21	 From Александр to All panelists : +
+17:01:39	 From Александр : +
+17:01:46	 From Artur : +
+17:01:48	 From andriy.gamar : +
+17:02:56	 From raikhan : +
+17:10:39	 From Guest to All panelists : +
+17:10:54	 From Александр : а можно просто скопировать? ctrl c
+17:11:02	 From Yevhen Tymoshenko : +
+17:12:13	 From vladik : +
+17:17:34	 From Aleksandr Chernyk : Данная "1" и не запишется в таблицу, а останиться только во время работы с запросом?
+17:21:17	 From Anna : 70
+17:21:20	 From raikhan : 70 во всех колонках
+17:32:38	 From raikhan : это для средней цены сожно использовать по категории
+17:32:59	 From vladik : Почему возле category есть     буква  p?
+17:43:01	 From Aleksandr Chernyk : 6
+17:43:47	 From raikhan : когда мы используем AS?
+17:44:15	 From raikhan : да
+17:44:18	 From raikhan : в 140
+17:46:16	 From Aleksandr Chernyk : 12
+17:46:16	 From Elizaveta Yurina : 12
+17:46:19	 From raikhan : ошибка\
+18:11:39	 From andriy.gamar : +
+18:11:39	 From Andrii_Pelypenko : +
+18:11:40	 From Svetlana Arkhipova : +
+18:11:41	 From Aleksandr Chernyk : Да. Всё ок
+18:11:45	 From raikhan : +
+18:11:47	 From Vadim Katkov : норм
+18:11:48	 From Вадим to All panelists : ок
+18:12:02	 From Лиодт Оля : аааа.. а я думала, это у меня звук лагает))
+18:19:50	 From raikhan : как вы даете имена к новым столбцам?
+18:20:44	 From andriy.gamar : через алиас :)))
+18:21:33	 From andriy.gamar : неа :)))
+18:27:33	 From Лиодт Оля : спасибо, до свидания
+18:27:49	 From Anna Ani to All panelists : thanks
+18:28:15	 From Вадим : спасибо
+18:28:22	 From andriy.gamar : спасибо

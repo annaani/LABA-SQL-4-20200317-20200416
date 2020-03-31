@@ -1,0 +1,34 @@
+17:01:00	 From Svetlana Arkhipova : +
+17:01:06	 From Лиодт Оля : +
+17:02:15	 From Aleksandr Chernyk : Объёмно)
+17:03:31	 From Raikhan : +
+17:06:49	 From Yevhen Tymoshenko : +
+17:08:25	 From Aleksandr Chernyk : да
+17:08:27	 From Андрей : +
+17:15:09	 From Aleksandr Chernyk : В данном случае 1 ссылается внутри скобок?
+17:17:13	 From Aleksandr Chernyk : да
+17:17:39	 From Yevhen Tymoshenko : а есть сразу процентный формат? или только в текст и потом добавить %?
+17:24:44	 From Лиодт Оля : для чего могут применяться лефт/райт?
+17:25:18	 From Yevhen Tymoshenko : а  с конца можно?
+17:26:41	 From Aleksandr Chernyk : Left & Right нужны когда нужно разобрать текс на таблицы с колонками
+17:26:50	 From Anna Ani to All panelists : +
+17:27:25	 From Anna Ani to All panelists : адвордс кампании , например
+17:28:07	 From igor.yakovenko : надо считать длину строки для того чтоб с конца
+17:31:39	 From Aleksandr Chernyk : Вот живой пример.Идёт одним текстом 01-22 120115 #BTG# Fyrtornet Henån (OS, MP) [SE] {J}Разделяю на номер 120115, Отдел BTG, и т.д.
+17:32:47	 From Лиодт Оля : спасибо)
+17:34:40	 From Raikhan : а как сделать чтобы только первая буква была заглавной?
+17:41:12	 From Yevhen Tymoshenko : есть ограничение на кол-во замен?
+17:41:19	 From Yevhen Tymoshenko : напрмиер, первое попадание в слове?
+17:41:27	 From Yevhen Tymoshenko : или первые два
+17:41:56	 From Yevhen Tymoshenko : ОК
+18:08:56	 From Лиодт Оля : когда пишем просто джойн, это означает иннер джоин?
+18:09:10	 From Лиодт Оля : ок
+18:15:58	 From Aleksandr Chernyk : emp1 emp2 здесь введены как переменные и после отсортируем заказы по второй переменной?
+18:22:25	 From Лиодт Оля : повторите, плз, что значит outer?
+18:28:45	 From Anna : как соединить три табл
+18:28:58	 From Anna : ?
+18:29:50	 From Aleksandr Chernyk : Хочется узнать ваше мнение о программах:Для винды бобёр или студия и почему?
+18:30:25	 From Anna : да, спасибо
+18:31:02	 From Aleksandr Chernyk : спасибо
+18:31:22	 From Anna Ani to All panelists : спасибо!)
+18:31:36	 From Лиодт Оля : спасибо

@@ -1,0 +1,51 @@
+17:00:28	 From  tutmos : +1
+17:00:48	 From  Ольга : +
+17:00:52	 From  Daniyar Seitembetov : +
+17:00:58	 From  arthurgudov  to  All panelists : +
+17:01:15	 From  Raikhan Ibrayeva  to  All panelists : +1
+17:01:19	 From  Galaxy A3 2016  to  All panelists : +
+17:01:58	 From  arthurgudov : +
+17:09:34	 From  Daniyar Seitembetov : Булевы операторы это по Булейской логике?
+17:09:49	 From  Daniyar Seitembetov : Boolean logic, точно не знаю как на русском
+17:14:47	 From  Daniyar Seitembetov : +
+17:14:50	 From  tutmos  to  All panelists : читается
+17:14:57	 From  Yevhen Tymoshenko : +
+17:17:42	 From  Ольга : как открыть окно для написания запросов? при нажатии на таблицу в дереве открывается только сама таблица.
+17:18:55	 From  Ольга : это если новое, а если хочу открыть из дерева
+17:19:07	 From  Anna Ani  to  All panelists : правой кнопкой мыши по таблице - select top 1000
+17:19:24	 From  Ольга : открывается только сама таблица
+17:19:32	 From  Ольга : та, что внизу
+17:20:02	 From  Ольга : да
+17:20:21	 From  Ольга : спасибо)
+17:23:07	 From  Anna Ani  to  All panelists : nhfypfrn
+17:23:12	 From  Anna Ani  to  All panelists : transact
+17:23:15	 From  Anna Ani  to  All panelists : sql
+17:23:35	 From  Anna Ani  to  All panelists : text editor-> transact sql
+17:23:38	 From  Ольга : в бивере версии 6.00 тоже не получается найти нумерацию, отличается путь от бивера 7.00
+17:27:53	 From  arthurgudov : Почему в beaver после указания таблицы появляется пробел и первая буква названия таблицы?
+17:29:51	 From  Daniyar Seitembetov : есть ли какое-то значение синего цвета description?
+17:33:04	 From  Daniyar Seitembetov : понятно, спасибо
+17:58:23	 From  Svetlana Arkhipova : я прослушала, как выводить результат по запросу в бивере. в SSMS Execute, при нажатии alt+X бивер генерирует все запросы сразу
+17:58:49	 From  Anna Ani  to  All panelists : ctrl+enter
+18:17:28	 From  Raikhan Ibrayeva : inyell не подошел к зпросу
+18:17:50	 From  Raikhan Ibrayeva : intel сорри
+18:18:08	 From  Svetlana Arkhipova : подошел, там потом xeon идет
+18:18:20	 From  igor.yakovenko : как найти знак процента лайком?
+18:21:26	 From  tutmos  to  All panelists : создал аккаунт на GitHub
+Пытаюсь создать клон репозитория в десктопе GitHub. Использую номер LABA-SQL-4-20200317-20200416. 
+Пишет, что не находит для моего аккаунта
+18:21:29	 From  Svetlana Arkhipova : %__n%
+18:21:35	 From  Raikhan Ibrayeva : %__n%
+18:22:19	 From  Daniyar Seitembetov : знак процента выделить '%'?
+18:22:30	 From  Raikhan Ibrayeva : ниже по списку был
+18:25:08	 From  Maksym Belko : https://github.com/MaksymBelko/LABA-SQL-4-20200317-20200416
+18:26:35	 From  tutmos : с GitHub получилось, спасибо
+18:33:31	 From  Вадим  to  All panelists : не совсем понятно по 4 заданию. Виртуальный столбец?
+18:34:11	 From  tutmos : да, вижу домашку
+18:36:43	 From  tutmos : спасибо!
+18:36:59	 From  Raikhan Ibrayeva : спасибо!
+18:37:01	 From  Ольга : до свидания, спасибо
+18:37:04	 From  Daniyar Seitembetov : спасибо!
+18:37:05	 From  arthurgudov : Спасибо!
+18:37:10	 From  Вадим  to  All panelists : спасибо!
+18:37:11	 From  Vladik : Спасибо

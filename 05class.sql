@@ -16,12 +16,13 @@
 from
 	db_laba.dbo.orders ord
 where
-	ord.salesman_id =
+	ord.salesman_id = --61
 	 --employee_id = 61
 (
-	select --*
+	select --*,
 		emp.employee_id
-		--, emp.email
+		 --emp.email
+		--emp.manager_id employee_id
 
 		from db_laba.dbo.employees emp
 	WHERE
@@ -36,11 +37,11 @@ SELECT
 from
 	db_laba.dbo.orders ord
 where
-	ord.salesman_id =
-	-- salesman_id = 18
+	ord.salesman_id = --60
+	-- customer_id = 18
 (
 	SELECT
-		--*
+		--*,
  ord0.salesman_id
 	from
 		db_laba.dbo.orders ord0
@@ -48,8 +49,8 @@ where
 		cus.customer_id = ord0.customer_id
 	where
 		cus.name = 'Progressive'
-		and ord0.salesman_id is NOT NULL )
-	and YEAR(ord.order_date) = 2017
+		and ord0.salesman_id is NOT NULL 
+		and YEAR(ord.order_date) = 2017 )
 order by
 	ord.order_date desc;
 
@@ -136,13 +137,13 @@ order by 6 desc;
 -- 6/18
  SELECT
 	o.order_id,
+	x.price_per_order,
 	--o.status,
 	cus.name,
 	cus.website,
-	e.first_name,
-	e.phone,
-	o.order_date,
-	x.price_per_order
+	COALESCE(e.first_name,'N/A') salesman,
+	COALESCE(e.phone,'N/A') salesman_phone--,
+--	o.order_date
 from
 	db_laba.dbo.orders o
 inner join (
@@ -224,7 +225,7 @@ where
 	ord.salesman_id IN --=
 (
 	SELECT
-		ord0.salesman_id--, ord0.order_date
+	/*DISTINCT*/ 	ord0.salesman_id--, ord0.order_date
 	from
 		db_laba.dbo.orders ord0
 	inner join db_laba.dbo.customers cus on
@@ -266,6 +267,7 @@ where
 -- 10/18
 SELECT
 	COUNT(DISTINCT o.customer_id) as customer_amount,
+	--COUNT( o.customer_id) as customer_amount2,
 	e.first_name
 from
 	db_laba.dbo.orders o
@@ -307,6 +309,7 @@ having
  	from
  		db_laba.dbo.countries
  	where
+ 		--country_name = 'France111');
  		country_name = 'France');
 
  -- NOT EXIST
@@ -361,7 +364,7 @@ having
   * | UNION и UNION ALL |
   * +-------------------+
   */
- -- вывести все заказы продавца по фамилии Ortiz
+ -- вывести все заказы 
  -- ранжировать вывод по группам
  -- 15/18
   SELECT
@@ -377,9 +380,9 @@ having
  union all
  SELECT
  	t1.order_id,
- 	SUM(t1.unit_price) price,
- 	--1--
- 	'5001-10000'
+ 	SUM(t1.unit_price) price222222,
+ 	--1
+ 	'5001-10000' wwww
  	--,888
  from
  	db_laba.dbo.order_items t1
@@ -406,21 +409,26 @@ having
  
  -- CASE
  -- 16/18
- SELECT x.order_id,
- 	x.price,
- 	case when  x.price < 5000 then '0-5000'
- 	 when  x.price BETWEEN 5000 and 10000 then '5001-10000'
- 	 when  x.price >  10000 then '10000+'
- 	end
- 	from (
-  SELECT
- 	t1.order_id,
- 	SUM(t1.unit_price) price
- from
- 	db_laba.dbo.order_items t1
- group by
- 	t1.order_id) x
- 	order by 3,2,1;
+SELECT
+	x.order_id,
+	x.price,
+	case
+		when x.price < 5000 then '0-5000'
+		when x.price BETWEEN 5000 and 10000 then '5001-10000'
+		when x.price > 10000 then '10000+' end
+	from
+		(
+		SELECT
+			t1.order_id,
+			SUM(t1.unit_price) price
+		from
+			db_laba.dbo.order_items t1
+		group by
+			t1.order_id) x
+	order by
+		3,
+		2,
+		1;
  
 -- with
 -- 17/18
@@ -432,6 +440,7 @@ from
 	db_laba.dbo.order_items t1
 group by
 	t1.order_id)
+	--select * from sum_per_order t
 select
 	order_id,
 	price,
@@ -453,12 +462,12 @@ select
  from
  	(
  	SELECT
- 		--first_name name
- 		last_name name
+ 		first_name name
+ 		--last_name name
  	from
  		db_laba.dbo.employees
- UNION all
- --union
+ --UNION all
+ union
  	SELECT
  		last_name
  	from

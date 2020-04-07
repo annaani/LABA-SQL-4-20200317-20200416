@@ -17,39 +17,40 @@
 	o.order_id
 	,o.item_id
 	,o.quantity
-	--* o.unit_price price
+	,o.unit_price price
 	--,SUM(o.quantity) SUM_QTY
-	--,SUM(o.quantity) OVER(PARTITION BY o.order_id) AS Total
+	--,SUM(o.quantity) OVER (PARTITION BY o.order_id) AS Total
 	--,SUM(o.quantity) OVER(PARTITION BY o.order_id ORDER BY o.item_id) AS Total2
-	,AVG(o.quantity)
-		OVER(PARTITION BY o.order_id) AS "Avg"
-	,AVG(o.quantity) OVER(PARTITION BY o.order_id ORDER BY o.item_id desc) AS "Avg2"
+	--,AVG(o.quantity) OVER(PARTITION BY o.order_id) AS "Avg"
+	--,AVG(o.quantity) OVER(PARTITION BY o.order_id ORDER BY o.item_id desc) AS "Avg2"
 	--,COUNT(o.quantity) OVER(PARTITION BY o.order_id) AS "Count"
 	--,COUNT(o.quantity) OVER(PARTITION BY o.order_id ORDER BY o.item_id desc) AS "Count2"
 	--,MIN(o.quantity) OVER(PARTITION BY o.order_id) AS "Min"
 	--,MIN(o.quantity) OVER(PARTITION BY o.order_id ORDER BY o.item_id desc) AS "Min2"
-	--,MAX(o.quantity) OVER(PARTITION BY o.order_id) AS "Max"
-	--,MAX(o.quantity) OVER(PARTITION BY o.order_id ORDER BY o.item_id desc) AS "Max2"
+	,MAX(o.quantity) OVER(PARTITION BY o.order_id) AS "Max"
+	,MAX(o.quantity) OVER(PARTITION BY o.order_id ORDER BY o.item_id desc) AS "Max2"
 from
 	db_laba.dbo.order_items o
 	where o.order_id in (1, 2)
---group by o.order_id,o.quantity
+group by o.order_id
+,o.quantity
 --ORDER BY 1,2--,o.unit_price
 --,o.quantity, o.unit_price
 	--,o.item_id,o.quantity, o.unit_price
 	;
 
 -- вывести все детали заказа и процент стоимости от общего заказа
--- для заказоа 4 года газад
+-- для заказоа 5 лет газад
 -- отсортировать по дате заказа, номеру заказа и по проценту
---SELECT YEAR(GETDATE()) -4
+--SELECT YEAR(GETDATE()) -5
+--2015
 -- 2/8
  select
 	x.order_id,
 	x.item_id,
 	x.quantity,
 	x.unit_price,
-	x.Total,
+	--x.Total,
 	x.order_date,
 	x.rotation_by_item
 from
@@ -61,8 +62,8 @@ from
 		o.quantity,
 		o.unit_price,
 		o.quantity * o.unit_price price_per_line,
-		SUM(o.unit_price * o.quantity)
-				OVER(PARTITION BY o.order_id ORDER BY o.quantity desc) AS Total ,
+		--SUM(o.unit_price * o.quantity)
+			--	OVER(PARTITION BY o.order_id ORDER BY o.quantity desc) AS Total ,
 		CAST(o.unit_price * o.quantity /
 		     SUM(o.unit_price * o.quantity)
 		     	OVER(PARTITION BY o.order_id) * 100 AS DECIMAL(5,2)) AS rotation_by_item
@@ -70,7 +71,7 @@ from
 		db_laba.dbo.order_items o
 	inner join db_laba.dbo.orders o0 on
 		o.order_id = o0.order_id
-		and YEAR(o0.order_date) = YEAR(GETDATE()) -4
+		and YEAR(o0.order_date) = YEAR(GETDATE()) -5
 		--AND o0.order_date BETWEEN '2015-01-01' AND '2015-12-31'
 		--order by 1, 8
 		) x
@@ -90,8 +91,9 @@ select
 	x.first_name,
 	x.last_name,
 	x.phone ,
-	ROW_NUMBER() OVER (ORDER BY x.sold desc, x.order_date) AS Row_Num ,
-	NTILE(4) OVER (ORDER BY x.sold desc) AS Quartile
+	--ROW_NUMBER() OVER (ORDER BY x.sold desc, x.order_date) AS Row_Num ,
+	--NTILE(4) OVER (ORDER BY x.sold desc) AS Quartile,
+	NTILE(8) OVER (ORDER BY x.sold desc) AS Quartile2
 from
 	(
 	select
@@ -108,7 +110,7 @@ from
 		e.employee_id = o0.salesman_id
 	where
 		year(o0.order_date) = 2017
-		and o0.salesman_id is not null
+		--and o0.salesman_id is not null
 	GROUP BY
 		o0.order_date,
 		e.first_name,
@@ -128,7 +130,7 @@ from
 	(
 	select
 		x.sold,
-		x.order_date,
+		--x.order_date,
 		x.first_name,
 		x.last_name,
 		x.phone ,
@@ -137,7 +139,7 @@ from
 		(
 		select
 			sum(o.unit_price * o.quantity) sold,
-			o0.order_date,
+			--o0.order_date,
 			e.first_name,
 			e.last_name,
 			e.phone
@@ -164,9 +166,10 @@ where
  select
 	c.name,
 	c.credit_limit,
-	ROW_NUMBER() OVER (ORDER BY c.credit_limit, c.name) AS row_num,
-	RANK() OVER (ORDER BY c.credit_limit) AS Rank ,
-	DENSE_RANK() OVER (ORDER BY c.credit_limit) AS DENSE_RANK
+	--ROW_NUMBER() OVER (ORDER BY c.credit_limit, c.name) AS row_num,
+	ROW_NUMBER() OVER (PARTITION by c.credit_limit ORDER BY  c.name) AS row_num
+	--RANK() OVER (ORDER BY c.credit_limit) AS Rank ,
+	--DENSE_RANK() OVER (ORDER BY c.credit_limit) AS DENSE_RANK
 from
 	db_laba.dbo.customers c
 where
@@ -231,6 +234,7 @@ inner join (
 	group by
 		oi.order_id) o2 on
 	o.order_id = o2.order_id;
+--sign_up between from to 
 
 
 /* +-----------------------------------------------------------+
@@ -240,6 +244,7 @@ inner join (
 --https://docs.microsoft.com/ru-ru/sql/t-sql/functions/analytic-functions-transact-sql?view=sql-server-2017
 --PERCENT_RANK
 --Вычисляет относительный ранг строки из группы строк в SQL Server 2017.
+
 --Для вычисления относительного положения значения в секции или результирующем наборе запроса
 --используется функция PERCENT_RANK
 

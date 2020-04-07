@@ -1,0 +1,56 @@
+17:00:40	 From  Vadim Katkov : +1
+17:00:44	 From  Aleksandr Chernyk : Добрый вечер
+17:00:51	 From  пк  to  All panelists : +
+17:00:52	 From  Raikhan : +
+17:00:57	 From  Лиодт Оля : +
+17:00:57	 From  Yevhen Tymoshenko : +
+17:04:02	 From  Aleksandr Chernyk : У меня с ДЗ 5, задача 4 возник интересный момент.Студия исполняет код DATEPART(YEAR, o.order_date)А вот Dbeaver не работает.
+17:04:34	 From  Yevhen Tymoshenko : там разница в кол-ве строк получается
+17:07:12	 From  Yevhen Tymoshenko : нет
+17:07:24	 From  Yevhen Tymoshenko : через айди и иначе
+17:07:35	 From  Yevhen Tymoshenko : да
+17:08:17	 From  Yevhen Tymoshenko : кстати, а почему?
+17:08:32	 From  Yevhen Tymoshenko : ок
+17:08:38	 From  Yevhen Tymoshenko : +
+17:19:14	 From  Vadim Katkov : lf
+17:19:16	 From  Anna Ani  to  All panelists : +
+17:19:16	 From  Vadim Katkov : да
+17:20:08	 From  Vadim Katkov : делает rolling total в рамках заказа
+17:20:11	 From  Raikhan : сумма с наростающим?
+17:22:30	 From  Vadim Katkov : скользящее среднее
+17:26:24	 From  Vadim Katkov : динамический / скользящий мин или макс
+17:28:07	 From  Raikhan : а что будет, если вы сгруппируете по ордер_ид? 
+17:28:08	 From  Anna Ani : нет пока все супер
+17:31:54	 From  Anna Ani : как выделить от скобки до скобки сочетанием клавиш?
+17:32:39	 From  Vadim Katkov : а нужен ли ORDER BY? он же будет считать от rolling total
+17:35:28	 From  Vadim Katkov : точку не поставили
+17:38:58	 From  Vadim Katkov : давайте дальше
+17:47:32	 From  Anna Ani : по какому принципу сгрупировались в квартиле не поняла
+17:47:54	 From  Anna Ani : по сумме продаж? там же времени небыло
+17:49:44	 From  Anna Ani : ааа, там без партишена, понятно
+17:50:04	 From  Vadim Katkov : квартлить оно должно по сумме продаж, согласно запросу. Выстраивает по порядку потому что первая сортировка по sold.. если поменять порядок сортировку то квартили разбросает хаотично
+17:50:20	 From  Vadim Katkov : так я так и написал
+17:50:34	 From  Vadim Katkov : это не все сообщение
+17:50:43	 From  Raikhan : квартили разделяют все значения ровно на 4 части
+17:50:59	 From  Anna Ani : понятно, спасибо, ребят))
+17:51:28	 From  Vadim Katkov : да
+17:55:43	 From  пк  to  All panelists : Здесь на самом деле выведены 4 человека
+17:56:42	 From  Vadim Katkov : понятно, но не заметили
+18:16:44	 From  Anna Ani : а с датой так можно? Дата регистрации допустим клиента
+18:18:51	 From  Anna Ani : допустим мне надо узнать дату регистрации клиента совершившего заказ
+18:20:26	 From  Anna Ani : да)
+18:20:29	 From  Anna Ani : спасибо
+18:24:25	 From  Raikhan : Хлоя
+18:26:01	 From  Vadim Katkov : они не просто раскидывает по группам, в какой процентной группе находится
+18:26:08	 From  Vadim Katkov : типа первых 16%
+18:34:33	 From  Vadim Katkov : ок, спасибо..
+18:34:33	 From  пк  to  All panelists : Спасибо!
+18:34:55	 From  Anna Ani : четные места это уточнение?
+18:35:27	 From  Anna Ani : выбрать
+18:35:31	 From  Anna Ani : понятно
+18:35:58	 From  Anna Ani : спасибо
+18:36:05	 From  Aleksandr Chernyk : Спасибо
+18:36:05	 From  Вадим : спасибо
+18:36:06	 From  Anna Ani : мы тоже
+18:36:08	 From  Anna Ani : )
+18:36:13	 From  Raikhan : спасибо
